@@ -372,3 +372,18 @@ extern "C" double rp_set_music_loop(double handle, double loop)
 	}
 	return 1.0;
 }
+
+extern "C" double rp_sound_exists(double handle)
+{
+    int tId = (int)handle;
+    auto tIt = gSounds.find(tId);
+    return (tIt != gSounds.end()) ? 1.0 : 0.0;
+}
+
+extern "C" double rp_music_exists(double handle)
+{
+    int tId = (int)handle;
+    std::lock_guard<std::mutex> tLock(gMusicMutex);
+    auto tIt = gMusics.find(tId);
+    return (tIt != gMusics.end()) ? 1.0 : 0.0;
+}

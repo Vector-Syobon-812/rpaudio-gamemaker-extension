@@ -15,6 +15,7 @@
 
     global._rp_load_sound = external_define(global.rp_dll_name, "rp_load_sound", dll_cdecl, ty_real, 1, ty_string);
     global._rp_unload_sound = external_define(global.rp_dll_name, "rp_unload_sound", dll_cdecl, ty_real, 1, ty_real);
+    global._rp_sound_exists = external_define(global.rp_dll_name, "rp_sound_exists", dll_cdecl, ty_real, 1, ty_real);
     global._rp_play_sound = external_define(global.rp_dll_name, "rp_play_sound", dll_cdecl, ty_real, 1, ty_real);
     global._rp_stop_sound = external_define(global.rp_dll_name, "rp_stop_sound", dll_cdecl, ty_real, 1, ty_real);
     global._rp_pause_sound = external_define(global.rp_dll_name, "rp_pause_sound", dll_cdecl, ty_real, 1, ty_real);
@@ -26,6 +27,7 @@
 
     global._rp_load_music = external_define(global.rp_dll_name, "rp_load_music", dll_cdecl, ty_real, 1, ty_string);
     global._rp_unload_music = external_define(global.rp_dll_name, "rp_unload_music", dll_cdecl, ty_real, 1, ty_real);
+    global._rp_music_exists = external_define(global.rp_dll_name, "rp_music_exists", dll_cdecl, ty_real, 1, ty_real);
     global._rp_play_music = external_define(global.rp_dll_name, "rp_play_music", dll_cdecl, ty_real, 1, ty_real);
     global._rp_stop_music = external_define(global.rp_dll_name, "rp_stop_music", dll_cdecl, ty_real, 1, ty_real);
     global._rp_pause_music = external_define(global.rp_dll_name, "rp_pause_music", dll_cdecl, ty_real, 1, ty_real);
@@ -213,3 +215,12 @@
     return external_call(global._rp_is_sound_playing,argument0);
 }
 
+#define rp_sound_exists
+{
+    return external_call(global._rp_sound_exists,argument0);
+}
+
+#define rp_music_exists
+{
+    return external_call(global._rp_music_exists,argument0);
+}

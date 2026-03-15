@@ -24,6 +24,7 @@ extern "C" {
 	
 	RP_EXPORT double rp_load_sound(const char *filename);
 	RP_EXPORT double rp_unload_sound(double handle);
+	RP_EXPORT double rp_sound_exists(double handle);
 	RP_EXPORT double rp_play_sound(double handle);
 	RP_EXPORT double rp_stop_sound(double handle);
 	RP_EXPORT double rp_pause_sound(double handle);
@@ -35,6 +36,7 @@ extern "C" {
 	
 	RP_EXPORT double rp_load_music(const char *filename);
 	RP_EXPORT double rp_unload_music(double handle);
+	RP_EXPORT double rp_music_exists(double handle);
 	RP_EXPORT double rp_play_music(double handle);
 	RP_EXPORT double rp_stop_music(double handle);
 	RP_EXPORT double rp_pause_music(double handle);

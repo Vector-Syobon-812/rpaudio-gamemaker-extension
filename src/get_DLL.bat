@@ -1,1 +1,1 @@
-g++ -m32 -O2 -s --shared -std=c++20 -pthread rpaudio.cpp -o rpAudio.dll -lraudio
+g++ -O2 -s --shared -std=c++20 -pthread rpaudio.cpp -o rpAudio.dll -lraudio
