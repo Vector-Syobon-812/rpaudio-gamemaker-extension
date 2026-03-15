@@ -8,7 +8,9 @@ I test this in ```GameMaker8.2```, ```GameMaker:studio1``` and ```GameMaker:stud
 
 ## How to use it
 For GameMaker:Studio1 or lower version, you need to use ```rpAudio_x32.dll```
+
 For GameMaker:Studio2 x64 game, you need to use ```rpAudio_x64.dll```
+
 Change the dll name to ```rpAudio.dll```
 
 Put the ```rpAudio.dll``` in the project folder.
