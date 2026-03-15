@@ -13,7 +13,7 @@ For GameMaker:Studio2 x64 game, you need to use ```rpAudio_x64.dll```
 
 Change the dll name to ```rpAudio.dll```
 
-Put the ```rpAudio.dll``` in the project folder.
+Put the ```rpAudio.dll``` in the project folder.(For studio, it's mean ```Include file```)
 
 Drag ```rpAudio.gml``` to the IDE.
 
